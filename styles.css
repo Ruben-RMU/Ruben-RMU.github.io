@@ -1,3 +1,7 @@
+:root {
+  --main-text-color: white;
+}
+
 #personal {
   background-color: #356251;
   width: 55%;
@@ -8,7 +12,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  color: white;
+  color: var(--main-text-color);
 }
 
 #prior {
@@ -21,7 +25,7 @@
   top: 200px;
   left: 10px;
   position: absolute;
-  color: white;
+  color: var(--main-text-color);
 }
 
 #swot {
@@ -34,7 +38,7 @@
   padding-right: 7px;
   border: 4px solid white;
   height: 270px;
-  color: white;
+  color: var(--main-text-color);
 }
 
 #job {
@@ -47,7 +51,7 @@
   padding-left: 15px;
   padding-right: 7px;
   border: 4px solid white;
-  color: white;
+  color: var(--main-text-color);
 }
 
 #addit {
@@ -56,7 +60,7 @@
   margin-right: 10px;
   height: 150px;
   background-color: rgb(78, 36, 92);
-  color: white;
+  color: var(--main-text-color);
   border: 4px solid white;
   padding-left: 15px;
   padding-right: 7px;
@@ -109,11 +113,11 @@ p {
 .goback {
   font-family: Helvetica;
   font-style: italic;
-  color: white;
+  color: var(--main-text-color);
 }
 
 .goback:visited {
-  color: white;
+  color: var(--main-text-color);
 }
 
 .goback:hover {
@@ -137,9 +141,9 @@ p {
 }
 
 @keyframes cycle {
-  0% {color: white;}
+  0% {color: var(--main-text-color);}
   50% {color: cornflowerblue;}
-  100% {color: white;}
+  100% {color: var(--main-text-color);}
 }
 
 #navbar {
@@ -190,7 +194,7 @@ p {
 
 .navbar h1 {
   font-family: consolas;
-  color: white;
+  color: var(--main-text-color);
   display: block;
   text-align: center;
   font-size: 27pt;
@@ -198,7 +202,7 @@ p {
 }
 
 .links a {
-  color: white;
+  color: var(--main-text-color);
   text-decoration: none;
   font-family: consolas;
 }
@@ -244,13 +248,13 @@ p {
   width: 150px;
   text-align: center;
   font-family: consolas;
-  color: white;
+  color: var(--main-text-color);
   font-size: 11pt;
 }
 
 #dash {
   width: 100%;
-  color: white;
+  color: var(--main-text-color);
   font-family: consolas;
   border: cornflowerblue 2px solid;
   background-color: darkslategray;
@@ -286,7 +290,7 @@ th {
   background-color: rgb(40, 61, 100);
   border: 2px white solid;
   padding: 0px;
-  color: white;
+  color: var(--main-text-color);
 }
 
 #sidebar {
@@ -310,7 +314,7 @@ th {
 #info1 p {
   font-family: Consolas;
   font-size: 12pt;
-  color: white;
+  color: var(--main-text-color);
   width: 300px;
   display: inline-block;
 }
@@ -318,13 +322,13 @@ th {
 #info1 h2 {
   font-family: Handjet;
   font-size: 26pt;
-  color: white;
+  color: var(--main-text-color);
 }
 
 #info1 h1 {
   font-family: Handjet;
   font-size: 32pt;
-  color: white;
+  color: var(--main-text-color);
 }
 
 .profimg {
@@ -371,7 +375,7 @@ th {
 
 #personalinfo {
   background-image: url("images/galaxy.webp");
-  color: white;
+  color: var(--main-text-color);
   border: 4px ridge white;
   font-family: Helvetica;
   font-size: 11pt;
@@ -385,14 +389,14 @@ th {
   font-style: normal;
   font-family: Consolas;
   font-size: 20pt;
-  color: white;
+  color: var(--main-text-color);
 }
 
 #paragraphs p {
   font-style: normal;
   font-family: Helvetica;
   font-size: 11pt;
-  color: white;
+  color: var(--main-text-color);
 }
 
 @font-face {
@@ -402,7 +406,7 @@ th {
 
 .question {
   font-family: handjet;
-  color: white;
+  color: var(--main-text-color);
   background-color: rgb(44, 137, 168);
   font-size: 30pt;
   padding: 5px;
@@ -419,7 +423,7 @@ th {
 }
 
 .answers {
-  color: white;
+  color: var(--main-text-color);
   font-family: Consolas;
   font-style: normal;
   margin: 0px;
@@ -465,7 +469,7 @@ th {
 }
 
 .post {
-  color: white;
+  color: var(--main-text-color);
   font-family: consolas;
   padding: 10px;
   background-color: #424242;
@@ -487,4 +491,9 @@ th {
   position: absolute;
   right: 0;
   transform: scaleX(-1);
+}
+
+#progMeter {
+  margin-left: 125px;
+  width: calc(100% - 250px);
 }
